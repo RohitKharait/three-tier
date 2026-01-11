@@ -4,7 +4,7 @@ function App() {
   const [number, setNumber] = useState(null);
 
   const generate = async () => {
-    const res = await fetch("http://localhost:5000/random");
+    const res = await fetch("http://13.54.9.159:5000/random");
     const data = await res.json();
     setNumber(data.number);
   };
@@ -18,5 +18,3 @@ function App() {
 }
 
 export default App;
-
-
